@@ -1,77 +1,205 @@
-// Ionic Variables and Theming. For more info, please see:
-// http://ionicframework.com/docs/theming/
-
-/** Ionic CSS Variables **/
 :root {
-  /** primary **/
-  --ion-color-primary: #3880ff;
-  --ion-color-primary-rgb: 56, 128, 255;
-  --ion-color-primary-contrast: #ffffff;
-  --ion-color-primary-contrast-rgb: 255, 255, 255;
-  --ion-color-primary-shade: #3171e0;
-  --ion-color-primary-tint: #4c8dff;
+  --ion-color-primary: #38a8ff;
+  --ion-color-primary-rgb: 56,168,255;
+  --ion-color-primary-contrast: #000000;
+  --ion-color-primary-contrast-rgb: 0,0,0;
+  --ion-color-primary-shade: #3194e0;
+  --ion-color-primary-tint: #4cb1ff;
 
-  /** secondary **/
-  --ion-color-secondary: #0cd1e8;
-  --ion-color-secondary-rgb: 12, 209, 232;
-  --ion-color-secondary-contrast: #ffffff;
-  --ion-color-secondary-contrast-rgb: 255, 255, 255;
-  --ion-color-secondary-shade: #0bb8cc;
-  --ion-color-secondary-tint: #24d6ea;
+  --ion-color-secondary: #9ad9ec;
+  --ion-color-secondary-rgb: 154,217,236;
+  --ion-color-secondary-contrast: #000000;
+  --ion-color-secondary-contrast-rgb: 0,0,0;
+  --ion-color-secondary-shade: #88bfd0;
+  --ion-color-secondary-tint: #a4ddee;
 
-  /** tertiary **/
-  --ion-color-tertiary: #7044ff;
-  --ion-color-tertiary-rgb: 112, 68, 255;
-  --ion-color-tertiary-contrast: #ffffff;
-  --ion-color-tertiary-contrast-rgb: 255, 255, 255;
-  --ion-color-tertiary-shade: #633ce0;
-  --ion-color-tertiary-tint: #7e57ff;
+  --ion-color-tertiary: #62f0dc;
+  --ion-color-tertiary-rgb: 98,240,220;
+  --ion-color-tertiary-contrast: #000000;
+  --ion-color-tertiary-contrast-rgb: 0,0,0;
+  --ion-color-tertiary-shade: #56d3c2;
+  --ion-color-tertiary-tint: #72f2e0;
 
-  /** success **/
   --ion-color-success: #10dc60;
-  --ion-color-success-rgb: 16, 220, 96;
+  --ion-color-success-rgb: 16,220,96;
   --ion-color-success-contrast: #ffffff;
-  --ion-color-success-contrast-rgb: 255, 255, 255;
+  --ion-color-success-contrast-rgb: 255,255,255;
   --ion-color-success-shade: #0ec254;
   --ion-color-success-tint: #28e070;
 
-  /** warning **/
-  --ion-color-warning: #ffce00;
-  --ion-color-warning-rgb: 255, 206, 0;
-  --ion-color-warning-contrast: #ffffff;
-  --ion-color-warning-contrast-rgb: 255, 255, 255;
-  --ion-color-warning-shade: #e0b500;
-  --ion-color-warning-tint: #ffd31a;
+  --ion-color-warning: #ffa900;
+  --ion-color-warning-rgb: 255,169,0;
+  --ion-color-warning-contrast: #000000;
+  --ion-color-warning-contrast-rgb: 0,0,0;
+  --ion-color-warning-shade: #e09500;
+  --ion-color-warning-tint: #ffb21a;
 
-  /** danger **/
   --ion-color-danger: #f04141;
-  --ion-color-danger-rgb: 245, 61, 61;
+  --ion-color-danger-rgb: 245,61,61;
   --ion-color-danger-contrast: #ffffff;
-  --ion-color-danger-contrast-rgb: 255, 255, 255;
+  --ion-color-danger-contrast-rgb: 255,255,255;
   --ion-color-danger-shade: #d33939;
   --ion-color-danger-tint: #f25454;
 
-  /** dark **/
   --ion-color-dark: #222428;
-  --ion-color-dark-rgb: 34, 34, 34;
+  --ion-color-dark-rgb: 34,34,34;
   --ion-color-dark-contrast: #ffffff;
-  --ion-color-dark-contrast-rgb: 255, 255, 255;
+  --ion-color-dark-contrast-rgb: 255,255,255;
   --ion-color-dark-shade: #1e2023;
   --ion-color-dark-tint: #383a3e;
 
-  /** medium **/
-  --ion-color-medium: #989aa2;
-  --ion-color-medium-rgb: 152, 154, 162;
-  --ion-color-medium-contrast: #ffffff;
-  --ion-color-medium-contrast-rgb: 255, 255, 255;
-  --ion-color-medium-shade: #86888f;
-  --ion-color-medium-tint: #a2a4ab;
+  --ion-color-medium:transparent;
+  --ion-color-medium-backgroud: transparent;
+  --ion-color-medium-padding:0.35em 1.2em;
+  --ion-color-medium-border:0.1em solid #FFFFFF;
+  --ion-color-medium-margin:0 0.3em 0.3em 0;
+  --ion-color-medium-border-radius:0.12em;
+  --ion-color-medium-box-sizing: border-box;
+  --ion-color-medium-text-decoration:none;
+  --ion-color-medium-font-family:'Roboto',sans-serif;
+  --ion-color-medium-font-weight:300;
+  --ion-color-medium-color:rgb(48, 129, 11);
+  --ion-color-medium-text-align:center;
+  --ion-color-medium-transition: all 0.2s;
 
-  /** light **/
+  
+
   --ion-color-light: #f4f5f8;
-  --ion-color-light-rgb: 244, 244, 244;
+  --ion-color-light-rgb: 244,244,244;
   --ion-color-light-contrast: #000000;
-  --ion-color-light-contrast-rgb: 0, 0, 0;
+  --ion-color-light-contrast-rgb: 0,0,0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+}
+
+ion-title {
+	position: absolute;
+	top: 5px;
+	left: 0;
+	padding: 0 70px 1px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+  }
+
+.back {
+  --background: url('../assets/pp.jpg')  center;
+background-size: cover;}
+
+  .back2 {
+    --background: url('../assets/yy.jpg') no-repeat center center / cover;}
+
+  @font-face {
+    font-family: 'Walter Turncoat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Walter Turncoat Regular'), local('WalterTurncoat-Regular'), url(https://fonts.gstatic.com/s/walterturncoat/v9/snfys0Gs98ln43n0d-14ULoToe6LZxec.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+.card1{
+  --background: rgba(111, 105, 111, 0);
+  color: white;
+}
+
+.nom{
+  font-size: 1.2rem;
+  color: #E8E8E8;
+  font-family: "Walter Turncoat", cursive;
+  float:center;
+  }
+
+
+  .titre{
+    font-size: 40px;
+  color: #E8E8E8;
+  font-family: "Walter Turncoat", cursive;
+  }
+
+.bout {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Walter Turncoat", cursive;
+  outline: none;
+  color: rgb(21, 88, 4);
+  font-weight: bold;
+  background-color: rgb(80, 145, 82);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px #999;
+}
+
+.bout:hover {background-color: #3e8e41}
+
+.bout:active {
+  background-color: #518853;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.txt{
+  width: 90%;
+  display: block;
+  margin: auto;
+  font-size: 20px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid white;
+  color: white;
+  font-family: "Walter Turncoat", cursive;
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+  }
+}
+
+// Material Design Sidemenu
+
+  .menu-header {
+    padding: 5px 15px;
+    background-image: url('../assets/bv.jpg');
+    background-size: cover;
+    color: white;
+    .name {
+      font-weight: 500;
+      margin-bottom: 25px;
+      margin-left: 3px; 
+      font-family: "Walter Turncoat", cursive;
+      font-size: 20px;
+    }
+
+  }
+  .user-avatar {
+ 
+    background-color: white;
+  }
+  .round {
+    border-radius: 50%;
+  }
+  
+  h3,
+  .label
+  {
+    color: #999;
+    font-weight: 400;
+  }
+.menu_but{
+  width: 100%;
+  height: 40px;
+  background-color: white;
+  font-size: 19px;
+  text-align: right;
+}
+
+
+.calen{
+  background: white;
+}
+
+* ::-webkit-scrollbar{
+  display: none;
 }

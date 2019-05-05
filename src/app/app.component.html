@@ -1,3 +1,51 @@
+
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+<ion-menu contentId="content1" side="end" >
+  <ion-content>
+    <div class="menu-header">
+      <!--material-design-background-->
+      <img class="user-avatar round" style="height:70px;width:70px;" src="../assets/dad.png"/>
+      <p class="name">فوزي المكي</p>
+     
+    </div>
+    <ion-list no-line menuClose="right">
+        <button menuClose class="menu_but" (click)="stats()"  ion-item detail-none >
+            
+            اﻹحصائيات
+            <ion-icon name="podium" item-right></ion-icon>
+        </button>
+      <button menuClose="right" class="menu_but" (click)="child()" ion-item detail-none >
+        
+        اﻷبناء
+        <ion-icon name="contacts" item-right></ion-icon>
+    </button>
+    <button menuClose="right" class="menu_but" (click)="homework()" ion-item detail-none >
+        
+        الواجبات المنزلية
+        <ion-icon name="book" item-right></ion-icon>
+    </button>
+    <button menuClose="right" class="menu_but" (click)="remarks()" ion-item detail-none >
+        
+        الملاحظات
+        <ion-icon name="clipboard" item-right></ion-icon>
+    </button>
+    <button menuClose="right" class="menu_but" (click)="exams()" ion-item detail-none >
+        
+        الفروض
+        <ion-icon name="calendar" item-right></ion-icon>
+    </button>
+    <button menuClose="right" class="menu_but" (click)="notes()" ion-item detail-none >
+        
+        اﻹعدادات
+        <ion-icon name="school" item-right></ion-icon>
+    </button>
+    <button menuClose="right" class="menu_but"  (click)="logout()" ion-item detail-none >
+        
+        الخروج
+        <ion-icon name="log-out" item-right></ion-icon>
+    </button>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+<ion-router-outlet id="content1" main></ion-router-outlet>
 </ion-app>

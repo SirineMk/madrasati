@@ -1,14 +1,22 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-toolbar>
+        <script type="text/javascript" src="../../theme/th.js">
+        </script>
 </ion-header>
 
-<ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
+<ion-content class="back">
+
+    <img  style ="display: block; margin: auto; margin-top: 30%; -webkit-filter: opacity(40%); filter: opacity(30%);" height= "150px" width= "150px" src='../../assets/hat.png'/>
+   <h1 class = "titre" align="center"> مدرستي</h1>
+   <form #form="ngForm" (ngSubmit)="login()">
+    <ion-input name ="email" type="email" class="txt" [(ngModel)]="logform.email" placeholder="example@example.com" autofocuse="true"></ion-input>
+    <ion-input name ="pass" type="password" class="txt" [(ngModel)]="logform.pass" placeholder="Password"></ion-input>
+    <ion-row>
+        <ion-col size="3"></ion-col>
+        <ion-col size="4" text-center>
+    <ion-button type="submit"  color="success" mode="md" style="text-size-adjust: 17px;" [disabled]="!loginForm.valid"  >تسجيل الدخول</ion-button>
+</ion-col> 
+<ion-col size="3"></ion-col>   
+</ion-row>
+</form>
+
 </ion-content>
